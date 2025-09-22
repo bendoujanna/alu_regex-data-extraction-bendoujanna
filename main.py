@@ -22,7 +22,7 @@ def extract_creditCard_numbers(text):
 
 files = ["test1.txt","test2.txt"]
 for filename in files:
-    print(f"\n...Extracting from {filename}...")
+    print(f"\n...Extracting from {filename}...\n")
     with open(filename, "r") as f:
         data = f.read()
 
@@ -31,7 +31,19 @@ for filename in files:
     phoneNumbers = extract_phoneNumbers(data)
     creditCardNumbers = extract_creditCard_numbers(data)
 
-    print("Emails found:", emails)
-    print("URLs found:", URLs)
-    print("PhoneNumbers found:", phoneNumbers)
-    print("CreditCards found:", creditCardNumbers)
+    if emails:
+        print(f"Emails found: {emails}\n")
+    else:
+        print("No emails found")
+    if URLs:
+        print(f"URLs found: {URLs}\n")
+    else:
+        print("No URLs found")
+    if phoneNumbers:
+        print(f"PhoneNumbers found: {phoneNumbers}\n")
+    else:
+        print("No PhoneNumbers found")
+    if creditCardNumbers:
+        print(f"CreditCards found: {creditCardNumbers}\n")
+    else:
+        print("No CreditCards found")
