@@ -35,13 +35,13 @@ Each function return a list of matches. In the main loop, the script checks the 
 
 **Repository structure**
 
-/README.md          # the README. file
+     /README.md          # the README. file
 
-/main.py            # main script with the regex patterns 
+     /main.py            # main script with the regex patterns 
 
-/test1.txt          # first test file with all types of data 
+     /test1.txt          # first test file with all types of data 
 
-/test2.txt          # second test file with one data type missing
+     /test2.txt          # second test file with one data type missing
 
 
 
@@ -69,9 +69,9 @@ The program will run automatically on each. Just make sure that they are in the 
 
 Matches:
 
--user@example.com
+     -user@example.com
 
--firstname.lastname@company.co.uk
+     -firstname.lastname@company.co.uk
 
 It does not match invalid email adresses
 
@@ -81,9 +81,9 @@ It does not match invalid email adresses
    
 Matches:
 
--https://www.example.com
+     -https://www.example.com
 
--https://subdomain.example.org/page
+     -https://subdomain.example.org/page
 
 It does not match http or any other type of url.
 
@@ -93,11 +93,11 @@ It does not match http or any other type of url.
    
 Matches:
 
- (123) 456-7890
+     (123) 456-7890
  
- 123-456-7890
+      123-456-7890
  
- 123.456.7890
+      123.456.7890
  
 It does not match any other format.
 
@@ -107,9 +107,9 @@ It does not match any other format.
    
 Matches:
 
- 1234 5678 9012 3456
+      1234 5678 9012 3456
  
- 1234-5678-9012-3456
+      1234-5678-9012-3456
  
 It does not match any other format.
 
@@ -117,35 +117,38 @@ It does not match any other format.
 
 **Some output samples**
 
-Below is a screenshot of the output. I also copied and pasted it in case the image won't be available. 
+Below is a screenshot of the output.
 
 <img width="1469" height="811" alt="Screenshot 2025-09-22 232904" src="https://github.com/user-attachments/assets/5cbdf402-a48f-4dd6-a269-1e3acc5e58da" />
 
-C:\Users\Admin\anaconda3\python.exe C:\Users\Admin\PycharmProjects\alu_regex-data-extraction-bendoujanna\main.py 
-
-...Extracting from test1.txt...
-
-Emails found: ['user@example.com', 'firstname.lastname@company.co.uk', 'rfner.fj@earlyaid.com']
-
-URLs found: ['https://www.mefnuin.com', 'https://ingvneori.irnv.org/page']
-
-Phone numbers found: ['(123) 456-7890', '123-456-7890', '123.456.7890']
-
-Credit card numbers found: ['1234 5678 9012 3456', '1234-5678-9012-3456']
+ I also copied and pasted it in case the image won't be available. 
 
 
-...Extracting from test2.txt...
+     C:\Users\Admin\anaconda3\python.exe C:\Users\Admin\PycharmProjects\alu_regex-data-extraction-bendoujanna\main.py 
 
-Emails found: ['bendoujnna@gmail.com', 'info@travelagency.org', 'bookings.support@holiday-company.com']
-
-URLs found: ['https://flights.example.com/details', 'https://support.example.org/help/tickets.', 'https://support.client.org/help']
-
-Phone numbers found: ['(321) 654-9870', '321-654-9870', '321.654.9870', '(000) 000-0000']
-
-No Credit card numbers found
-
-
-Process finished with exit code 0
+     ...Extracting from test1.txt...
+     
+     Emails found: ['user@example.com', 'firstname.lastname@company.co.uk', 'rfner.fj@earlyaid.com']
+     
+     URLs found: ['https://www.mefnuin.com', 'https://ingvneori.irnv.org/page']
+     
+     Phone numbers found: ['(123) 456-7890', '123-456-7890', '123.456.7890']
+     
+     Credit card numbers found: ['1234 5678 9012 3456', '1234-5678-9012-3456']
+     
+     
+     ...Extracting from test2.txt...
+     
+     Emails found: ['bendoujnna@gmail.com', 'info@travelagency.org', 'bookings.support@holiday-company.com']
+     
+     URLs found: ['https://flights.example.com/details', 'https://support.example.org/help/tickets.', 'https://support.client.org/help']
+     
+     Phone numbers found: ['(321) 654-9870', '321-654-9870', '321.654.9870', '(000) 000-0000']
+     
+     No Credit card numbers found
+     
+     
+     Process finished with exit code 0
 
 
 
