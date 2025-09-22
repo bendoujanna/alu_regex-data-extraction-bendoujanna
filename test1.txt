@@ -1,28 +1,41 @@
-Email addresses:
+Hello dear customer,
+We hope you're doing well
+
+Feel free to use these email adresses to reach out to us:
 user@example.com
 firstname.lastname@company.co.uk
+rfner.fj@earlyaid.com
+rijfn@o9303
+
+In case you need more information about our organization, kindly visit the websites below:
 URLs:
-https://www.example.com
-https://subdomain.example.org/page
+https://www.mefnuin.com
+https://ingvneori.irnv.org/page
 htp://fud.eci.org/page
-Phone numbers (various formats):
+https://rogneornwf@kwrj
+
+Here are the number you can contact us with in case you don't have an email adress:
 (123) 456-7890
 123-456-7890
 123.456.7890
-Credit card numbers:
+4985025812-34
+2408452-43482
+43459835208222
+
+To order our products, we only accept these two credit card number formats:
 1234 5678 9012 3456
 1234-5678-9012-3456
-Time:
-14:30 (24-hour format)
-2:30 PM (12-hour format)
-HTML tags:
-<p>
-<div class="example">
-<img src="image.jpg" alt="description">
-Hashtags:
-#example
-#ThisIsAHashtag
+All the others formats like:
+57802-47503.485734989
+2462489t756429820596
+284802348478r562
+won't be accepted
+We are opened from 9am to 10pm every day except sunday
 
-Currency amounts:
+The currency accepted is dollars $
+Our prices:
+$40.32
 $19.99
 $1,234.56
+
+THANK YOU!

@@ -1,4 +1,22 @@
-b.vit@.com
-b.fhrf.gmail.com
+
 bendoujnna@gmail.com
-My phone number is 0795027607
+
+Hello,
+
+This is a reminder from our travel agency about your upcoming trip.
+If you have any questions, send an email to info@travelagency.org or bookings.support@holiday-company.com.
+You can also visit our travel portal at https://flights.example.com/details or our secondary help page at https://support.example.org/help/tickets.
+
+Need to call us? Our main numbers are (321) 654-9870 and 321-654-9870.
+We no longer use our old number 321.654.9870 but you might still see it in some of our old documents.
+
+For payments, please make sure your credit card is ready.
+
+Safe travels!
+
+1234567890123456
+Payment reference code: REF-9821
+- Temporary link: http://localhost:8080/test
+(000) 000-0000
+- A random email: hello@@wrongformat.com
+- Support URL: https://support.client.org/help
