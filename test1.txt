@@ -34,8 +34,9 @@ We are opened from 9am to 10pm every day except sunday
 
 The currency accepted is dollars $
 Our prices:
-$40.32
+$40.32  #regex_extraction
 $19.99
 $1,234.56
 
-THANK YOU!
+THANK YOU!  ####%%%%%
+me#thankyou!
