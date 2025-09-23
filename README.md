@@ -1,20 +1,26 @@
-**alu_regex-data-extraction-bendoujanna**
+****alu_regex-data-extraction-bendoujanna****
 
 
 
 **Project overview**
 
-As software engineers, we have to be able to extract from a thousand of documents the exact data that we need. 
+As software engineers, we have to be able to extract from a thousand of documents the exact data we need. 
 This program read through files and extract data types using regular expressions.
-For this assignment, I focused on four data types:
+For this assignment, I focused on five (5) data types:
+
 -Email adresses
+
 -URLs 
+
 -Phone numbers in three formats
+
 -Credit card numbers in two formats
+
+-Hashtags
 
 It's entirely built in **python** and does not need any external libraries apart from the standard "re" module (already imported in the main python file)
 
-This is part of the Regex Onboarding Hackathon formative assignment at ALU, the African Leadership University. 
+This is part of the Regex Onboarding Hackathon formative assignment at the African Leadership University. 
 The task is to choose at least four data types, write regex patterns to match them, and then write a program that would read test files and extract the matching data.
 
 
@@ -29,7 +35,7 @@ The script in the main file (main.py) does the three main things:
 
 -Prints what it finds, or prints a message in case nothing is found
 
-Each function return a list of matches. In the main loop, the script checks the lists and prints results neatly.
+Each function return a list of matches. In the main loop, the script checks the lists and prints results.
 
 
 
@@ -51,13 +57,24 @@ Each function return a list of matches. In the main loop, the script checks the 
 
 -Open a terminal in the folder 
 
-      *Make sure all the files are in the same directory, then run "python main.py"
+   *Make sure all the files are in the same directory, then run "python main.py"
       
-      *If you're using VS code or pyCharm, you can open the folder directly and run the "main.py" file
+   *If you're using VS code or pyCharm, you can open the folder directly and run the "main.py" file
 
 The script will read each file lsited in the "files" list.
-You can add more filenames to this list if you create additional test files. 
-The program will run automatically on each. Just make sure that they are in the same folder as main.py
+
+
+   **Adding test files**
+   
+   You can add more filenames to this list if you create additional test files. 
+
+   This is how the list currently looks:
+   
+        files = ['test1.txt', 'test2.txt']
+
+   You can add more test files in this list if you create any. 
+   
+   The program will run automatically on each. Just make sure that they are in the same folder as main.py
 
 
 
@@ -113,18 +130,27 @@ Matches:
  
 It does not match any other format.
 
+5. Hashtags
+   
+   (?:^|\s)(#[A-Za-z0-9_]+)
+
+Matches:
+
+      #ThisIsAHashtag
+
+      #example
+
 
 
 **Some output samples**
 
 Below is a screenshot of the output.
 
-<img width="1469" height="811" alt="Screenshot 2025-09-22 232904" src="https://github.com/user-attachments/assets/5cbdf402-a48f-4dd6-a269-1e3acc5e58da" />
+<img width="1243" height="874" alt="Screenshot 2025-09-23 182005" src="https://github.com/user-attachments/assets/c172db4b-128d-4798-b042-0b53175abb04" />
+
 
  I also copied and pasted it in case the image won't be available. 
 
-
-     C:\Users\Admin\anaconda3\python.exe C:\Users\Admin\PycharmProjects\alu_regex-data-extraction-bendoujanna\main.py 
 
      ...Extracting from test1.txt...
      
@@ -135,6 +161,8 @@ Below is a screenshot of the output.
      Phone numbers found: ['(123) 456-7890', '123-456-7890', '123.456.7890']
      
      Credit card numbers found: ['1234 5678 9012 3456', '1234-5678-9012-3456']
+     
+     Hashtags found: ['#regex_extraction']
      
      
      ...Extracting from test2.txt...
@@ -147,8 +175,21 @@ Below is a screenshot of the output.
      
      No Credit card numbers found
      
+     Hashtags found: ['#hello', '#World', '#ThisIsATest']
+     
      
      Process finished with exit code 0
+
+     
+
+**Limitations**
+
+As you have read earlier, there are some formats the regular expressions won't match.
+
+They match only the formats I indicated above.
+
+Please note that this is intentional and part of the assignment. 
+
 
 
 
