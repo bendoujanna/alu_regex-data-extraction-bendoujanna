@@ -1,17 +1,21 @@
 """
-That program is built to extract for data types among a thousand of data
+That program is built to extract five data types among a thousand of data
     -emails
     -phone numbers
     -credit card numbers
     -URLs
+    -Hashtags
 """
-import re # Import the 're' module to use regular expressions
+import re # Import the python 're' module to use regular expressions
 
-# The functions below extracts the four data types chosen
+# The functions below extracts the five data types chosen
 
 def extract_emails(text):
     """
-    Extract all emails found in a text and return a list of email addresses
+    Extract all emails found in a text and return a list of email addresses.
+    Formats:
+        -user@example.com
+        -firstname.lastname@company.co.uk
     """
     pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
     return re.findall(pattern, text)  # Return everything that matches the pattern
@@ -20,6 +24,9 @@ def extract_URLs(text):
     """
     Extracts all the HTTPS URLs found from a text
     Then returns a list of the URLs
+    Formats:
+        -https://www.example.com
+        -https://subdomain.example.org/page
     """
     pattern = r'https:\/\/(?:[\w-]+\.)+[\w-]+(?:\/[^\s]*)?'
     return re.findall(pattern, text)
@@ -47,10 +54,17 @@ def extract_creditCard_numbers(text):
     return re.findall(pattern, text)
 
 def extract_hashtags(text):
+    """
+    Extracts all the hashtags found in a text in the formats:
+    #ThisIsAHashtag
+    #example
+    Then returns a list of the hashtags
+    """
     pattern = r'(?:^|\s)(#[A-Za-z0-9_]+)'
     return re.findall(pattern, text)
+
 """
-The part below read the text files and extract the data
+The part below read the text files and extract the data types
 """
 
 files = ["test1.txt","test2.txt"]  # List of text files to analyze
