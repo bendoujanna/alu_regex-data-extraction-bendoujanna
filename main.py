@@ -48,6 +48,7 @@ def extract_creditCard_numbers(text):
     1234 5678 9012 3456
     1234-5678-9012-3456
     Then returns a list of the credit card numbers
+
     """
     pattern = r'\d{4}(?:[ -])\d{4}(?:[ -])\d{4}(?:[ -])\d{4}'
 
@@ -62,6 +63,7 @@ def extract_hashtags(text):
     """
     pattern = r'(?:^|\s)(#[A-Za-z0-9_]+)'
     return re.findall(pattern, text)
+
 
 """
 The part below read the text files and extract the data types
