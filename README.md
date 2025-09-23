@@ -1,8 +1,8 @@
 ****alu_regex-data-extraction-bendoujanna****
 
+<br>
 
-
-**Project overview**
+#**Project overview**
 
 As software engineers, we have to be able to extract from a thousand of documents the exact data we need. 
 This program read through files and extract data types using regular expressions.
@@ -23,25 +23,26 @@ It's entirely built in **python** and does not need any external libraries apart
 This is part of the Regex Onboarding Hackathon formative assignment at the African Leadership University. 
 The task is to choose at least four data types, write regex patterns to match them, and then write a program that would read test files and extract the matching data.
 
+<br>
 
-
-**How it works**
+##**How it works**
 
 The script in the main file (main.py) does the three main things:
 
 -Reads a list of text files 
 
--Applies four regex based extractor functions, one for each data type
+-Applies five (5) regex based extractor functions, one for each data type
 
 -Prints what it finds, or prints a message in case nothing is found
 
 Each function return a list of matches. In the main loop, the script checks the lists and prints results.
 
 
+<br>
 
-**Repository structure**
+###**Repository structure**
 
-     /README.md          # the README. file
+     /README.md          # the README file
 
      /main.py            # main script with the regex patterns 
 
@@ -50,8 +51,9 @@ Each function return a list of matches. In the main loop, the script checks the 
      /test2.txt          # second test file with one data type missing
 
 
+<br>
 
-**Setup**
+####**Setup**
 
 -Clone the repository
 
@@ -63,6 +65,7 @@ Each function return a list of matches. In the main loop, the script checks the 
 
 The script will read each file lsited in the "files" list.
 
+<br>
 
    **Adding test files**
    
@@ -77,8 +80,9 @@ The script will read each file lsited in the "files" list.
    The program will run automatically on each. Just make sure that they are in the same folder as main.py
 
 
+<br>
 
-**Regex patterns used**
+#####**Regex patterns used**
 
 1. Email adresses
    
@@ -141,8 +145,9 @@ Matches:
       #example
 
 
+<br>
 
-**Some output samples**
+######**Some output samples**
 
 Below is a screenshot of the output.
 
@@ -182,13 +187,26 @@ Below is a screenshot of the output.
 
      
 
-**Limitations**
+#######**Limitations**
 
-As you have read earlier, there are some formats the regular expressions won't match.
+As you have read earlier, there are some formats the regular expressions won't match. Their aim is not to match all formats possible of emails, URLs, phone numbers, credit card numbers and hashtags.
 
 They match only the formats I indicated above.
 
 Please note that this is intentional and part of the assignment. 
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+**Regex Onboarding Hackathon assignment**
+
+*Bendou Janna Vitalina Soeur*
+
+
 
 
 
