@@ -46,6 +46,9 @@ def extract_creditCard_numbers(text):
 
     return re.findall(pattern, text)
 
+def extract_hashtags(text):
+    pattern = r'(?:^|\s)(#[A-Za-z0-9_]+)'
+    return re.findall(pattern, text)
 """
 The part below read the text files and extract the data
 """
@@ -54,13 +57,14 @@ files = ["test1.txt","test2.txt"]  # List of text files to analyze
 for filename in files:  # Loop through each file
     print(f"\n...Extracting from {filename}...\n")
     with open(filename, "r") as f:  # Open and read the file content
-        data = f.read()
+        datatype = f.read()
 
     # Apply the extraction functions to the file content
-    emails = extract_emails(data)
-    URLs = extract_URLs(data)
-    phoneNumbers = extract_phoneNumbers(data)
-    creditCardNumbers = extract_creditCard_numbers(data)
+    emails = extract_emails(datatype)
+    URLs = extract_URLs(datatype)
+    phoneNumbers = extract_phoneNumbers(datatype)
+    creditCardNumbers = extract_creditCard_numbers(datatype)
+    hashtags = extract_hashtags(datatype)
 
     # For each data type, display the results or a message in case nothing is found
     if emails:
@@ -79,3 +83,7 @@ for filename in files:  # Loop through each file
         print(f"Credit card numbers found: {creditCardNumbers}\n")
     else:
         print("No Credit card numbers found\n")
+    if hashtags:
+        print(f"Hashtags found: {hashtags}\n")
+    else:
+        print("No Hashtags found\n")
